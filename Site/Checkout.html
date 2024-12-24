@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="css/checkout.css">
+   <title>Checkout</title>
+   
+      
+      
+</head>
+<body>
+   <!-- NAVBAR-->
+   <div>
+
+      
+
+    <nav class="navbar">
+      <a href="index.html"><div class="logo">BookStore</div></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li  onclick="open_cart()"><a href="#">Cart</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+   </div>
+   <div>
+      <h2>Checkout</h2>
+      <br>
+    
+   </div>
+   <div class="landing-page" >
+      <div style="margin: 0 auto; width: fit-content;">
+         <h1>Payment</h1>
+         <div class="landing-page-type">
+            <input type="text" placeholder="Payment deatils">
+            <div class="landing-page-type"> <input type="text" placeholder="Card Number"></div>
+            <div class="payment-footer" style="margin-bottom: 20px;">
+                <input type="text" name="expiration" placeholder="Expiration">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div> <a href="index.html"><button> Back</button></a> &nbsp<button id="myButton">Confirm Payment</button></div>
+         </div>
+      </div>
+      <div>
+         
+      </div>
+   </div>
+   </div>
+
+
+   <!-- Cart_Page -->
+<div class="cart">
+
+   <div class="top_cart">
+       <h3>My Cart<span>(Item in cart)</span></h3>
+       <span class="close1" onclick="close_cart()"><i class="fa-regular fa-circle-xmark"></i></span>
+   </div>
+ 
+   <div class="item_in_cart">
+           <div class="item">
+               <div class="imgbook"><img src="images/THG.jpg" alt="book image" ></div>
+               
+               <div class="content">
+                   <h4> The Hunger Games (Book One) </h4>
+                   <h6>Suzanne Collins</h6>
+                   <p class="book_price">599 EG</p>
+               </div>
+ 
+              <div class="delet">
+                    <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+              </div>
+           </div>
+           <div class="item">
+               <div class="imgbook"><img src="images/1984.jpg" alt="book image" ></div>
+               
+               <div class="content">
+                   <h4>1984</h4>
+                   <h6>George Orwell</h6>
+                   <p class="book_price">175 EG</p>
+               </div>
+ 
+              <div class="delet">
+                    <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+              </div>
+           </div>
+           <div class="item">
+               <div class="imgbook"><img src="images/book1.jpg" alt="book image" ></div>
+               
+               <div class="content">
+                   <h4>فن اللامبالاة</h4>
+                   <h6>Mark Manson</h6>
+                   <p class="book_price">40 EG</p>
+               </div>
+ 
+              <div class="delet">
+                    <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+              </div>
+           </div>
+   </div>
+ 
+   <div class="buttom_Cart">
+ 
+       <div class="total">
+           <p>Cart Sub Total</p>
+           <p class="price_cart_total">0 EG</p>
+       </div>
+      
+       <div class="chekoutbtn">
+           <a href="Checkout.html" class="btn_cart">Proceed To Checkout</a>   
+       </div>         
+ 
+   </div>
+ 
+ </div>
+ 
+
+   <!---   footer-->
+   <footer class="footer">
+      <div class="column">
+         <h3>Menu</h3>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="About.html">About Us</a></li>
+         </ul>
+      </div>
+      <div class="column">
+         <h3>Contacts</h3>
+         <ul>
+            <li> Email: <a href="#">BookStore@gmail.com</a></li>
+         </ul>
+         <ul>
+            <li> Phone: <a href="#">+123 456 789</a></li>
+         </ul>
+      </div>
+      <div class="column">
+         <h3>Socials</h3>
+         <div class="social-icons">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank" style="margin-right: 15px;">
+            <i class="fab fa-facebook" style="font-size: 24px; color: #4267B2;"></i>
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank" style="margin-right: 15px;">
+            <i class="fab fa-instagram" style="font-size: 24px; color: #C13584;"></i>
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank" style="margin-right: 15px;">
+            <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
+            </a>
+            <a href="https://tiktok.com" aria-label="TikTok" target="_blank" style="margin-right: 15px;">
+            <i class="fab fa-tiktok" style="font-size: 24px; color: #F8FAFC;"></i>
+            </a>
+         </div>
+      </div>
+      <div class="column">
+        <div class="column">
+            <ul><li><a href="#">Top Page ↑</a></li></ul>
+        </div>      </div>
+   </footer>
+   <script language="javascript">
+    document.getElementById("myButton").addEventListener("click", function() {
+        alert("Payment Successful!");
+       });
+    </script>
+    <script src="main.js"></script>
+
+
+</body>

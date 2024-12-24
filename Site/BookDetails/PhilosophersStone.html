@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter and Philosopher's Stone</title>
+    <link rel="stylesheet" href="Books.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@400;500&display=swap"rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+
+
+    <!-- css code -->
+
+  </head>
+<body>
+    <div class="con">
+
+      <!-- Navbar -->
+        <!-- Navbar -->
+<nav class="navbar">
+  <a href="../index.html"><div class="logo">BookStore</div></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="#" onclick="open_cart()">Cart</a></li>
+    <li><a href="../About.html">About Us</a></li>
+
+  </ul>
+</nav>
+
+
+      <div class="cart">
+
+        <div class="top_cart">
+            <h3>My Cart<span>(Item in cart)</span></h3>
+            <span class="close1" onclick="close_cart()"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+      
+        <div class="item_in_cart">
+                <div class="item">
+                    <div class="imgbook"><img src="images/THG.jpg" alt="book image" ></div>
+                    
+                    <div class="content">
+                        <h4> The Hunger Games (Book One) </h4>
+                        <h6>Suzanne Collins</h6>
+                        <p class="book_price">599 EG</p>
+                    </div>
+      
+                   <div class="delet">
+                         <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                   </div>
+                </div>
+                <div class="item">
+                    <div class="imgbook"><img src="images/1984.jpg" alt="book image" ></div>
+                    
+                    <div class="content">
+                        <h4>1984</h4>
+                        <h6>George Orwell</h6>
+                        <p class="book_price">175 EG</p>
+                    </div>
+      
+                   <div class="delet">
+                         <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                   </div>
+                </div>
+                <div class="item">
+                    <div class="imgbook"><img src="images/book1.jpg" alt="book image" ></div>
+                    
+                    <div class="content">
+                        <h4>فن اللامبالاة</h4>
+                        <h6>Mark Manson</h6>
+                        <p class="book_price">40 EG</p>
+                    </div>
+      
+                   <div class="delet">
+                         <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                   </div>
+                </div>
+        </div>
+      
+        <div class="buttom_Cart">
+      
+            <div class="total">
+                <p>Cart Sub Total</p>
+                <p class="price_cart_total">0 EG</p>
+            </div>
+           
+            <div class="chekoutbtn">
+                <a href="../Checkout.html" class="btn_cart">Proceed To Checkout</a>   
+            </div>         
+      
+        </div>
+      
+      </div>
+      
+
+
+
+
+
+    <section>
+      <table>
+        <tr> <td><h1> Harry Potter and the Philosopher's Stone </h1> </td></tr>
+       <tr> <br>  <td> <img src='images/Philosopers_Stone_New_UK_Cover.webp' width="313" height="475"  border='2'  alt = 'Error'  /> </td> <td>  784 pages<br><br> First published July 21,2007<br><br> <h2>About the Book<br><br> </h2> "Harry Potter has never played a sport while flying on a broomstick. He's never worn a Cloak of Invisibility, befriended a half-giant, or helped hatch a dragon. All Harry knows is a miserable life with the Dursleys: his horrible aunt and uncle and their abominable son, Dudley. Harry's room is a tiny Cupboard Under the Stairs, he hasn't had a birthday party in ten years, and his birthday present is his uncle's old socks.
+
+        But all that is about to change when a mysterious letter arrives by owl messenger. A letter with an invitation to a wonderful place he never dreamed existed. There he finds not only friends, aerial sports, and magic around every corner, but a great destiny that's been waiting for him... if Harry can survive the encounter."
+        
+        "Until now there's been no magic for Harry Potter. He lives with the miserable Dursleys and their abominable son, Dudley. Harry's room is a tiny closet beneath the stairs, and he hasn't had a birthday party in ten years. Then a mysterious letter arrives by owl messenger. A letter with an invitation to an incredible place called Hogwarts School of Witchcraft and Wizardry. There he finds not only friends, flying sports on broomsticks, and magic in everything from classes to meals.
+        
+        Harry Potter thinks he is an ordinary boy - until he is rescued by a beetle-eyed giant of a man, enrols at Hogwarts School of Witchcraft and Wizardry, learns to play Quidditch, and does battle in a deadly duel. The Reason, Harry Potter is a wizard!"
+
+</td> <td>            </td>  </tr>
+          <tr> <td> <h2><a href="../AuthorPage.html" class="aut">J.K.Rowling</a> </h3>       </td><td align="center"><a href="../Checkout.html"> <button style="width: 300px; height: 60px;" class="button-8" > Buy</button></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button style="width: 300px; height: 60px;" onclick="open_cart()" class="button-8"> Add to Cart </button> </td>  </tr>
+    
+      </table>
+    </section>
+
+
+    <section class="featured-books">
+        <div class="container">
+            <h3>Related Books</h3>
+            <div class="books">
+                <div class="book-card" >
+                    <img src="images/image1.jpeg " height=50% alt="Book 1">
+                    <h4>Harry Potter and the Chamber of Secrets</h4>
+                    <p>J.K.Rowling</p>
+                    <a href="ChamberOfSecrets.html"><button onclick="viewBookDetail('book1')" class="details">View Details</button></a>
+                </div>
+                <div class="book-card">
+                    <img src="images/down.jpg" height=50% alt="Book 2">
+                    <h4>Harry Potter and the Deathly Hallows</h4>
+                    <p>J.K.Rowling</p>
+                    <a href="DeathlyHallows.html"><button onclick="viewBookDetail('book2')" class="details">View Details</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section class="featured-books">
+        <div class="container">
+
+                
+    </section>
+
+    <footer class="footer">
+            <div class="column">
+              <h3>Menu</h3>
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                
+                <li><a href="../About.html">About Us</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h3>Contacts</h3>
+              <ul>
+                <li>Email: <a href="#">BookStore@gmail.com</a></li>
+              </ul>
+              <ul>
+                <li>Phone: <a href="#">+123 456 789</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h3>Socials</h3>
+              <div class="social-icons">
+                <a
+                  href="https://facebook.com"
+                  aria-label="Facebook"
+                  target="_blank"
+                  style="margin-right: 15px"
+                >
+                  <i
+                    class="fab fa-facebook"
+                    style="font-size: 24px; color: #4267b2"
+                  ></i>
+                </a>
+
+                <a
+                  href="https://instagram.com"
+                  aria-label="Instagram"
+                  target="_blank"
+                  style="margin-right: 15px"
+                >
+                  <i
+                    class="fab fa-instagram"
+                    style="font-size: 24px; color: #c13584"
+                  ></i>
+                </a>
+
+                <a
+                  href="https://twitter.com"
+                  aria-label="Twitter"
+                  target="_blank"
+                  style="margin-right: 15px"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="font-size: 24px; color: #1da1f2"
+                  ></i>
+                </a>
+
+                <a
+                  href="https://tiktok.com"
+                  aria-label="TikTok"
+                  target="_blank"
+                  style="margin-right: 15px"
+                >
+                  <i
+                    class="fab fa-tiktok"
+                    style="font-size: 24px; color: #ffffff"
+                  ></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="column">
+                  <ul><li><a href="#">Top Page ↑</a></li></ul>
+              </div>      </div>
+          </footer>
+        </div>
+
+         <script src="main.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

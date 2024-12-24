@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="onlyCart.css">
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body style="padding-bottom:50 ;">
+    <nav class="navbar">
+        <a href="index.html"><div class="logo">BookStore</div></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" onclick="open_cart()">Cart</a></li>
+          <li><a href="About.html">About Us</a></li>
+      
+        </ul>
+      </nav>
+      
+      
+            <div class="cart">
+      
+              <div class="top_cart">
+                  <h3>My Cart<span>(Item in cart)</span></h3>
+                  <span class="close1" onclick="close_cart()"><i class="fa-regular fa-circle-xmark"></i></span>
+              </div>
+            
+              <div class="item_in_cart">
+                      <div class="item">
+                          <div class="imgbook"><img src="images/THG.jpg" alt="book image" ></div>
+                          
+                          <div class="content">
+                              <h4> The Hunger Games (Book One) </h4>
+                              <h6>Suzanne Collins</h6>
+                              <p class="book_price">599 EG</p>
+                          </div>
+            
+                         <div class="delet">
+                               <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                         </div>
+                      </div>
+                      <div class="item">
+                          <div class="imgbook"><img src="images/1984.jpg" alt="book image" ></div>
+                          
+                          <div class="content">
+                              <h4>1984</h4>
+                              <h6>George Orwell</h6>
+                              <p class="book_price">175 EG</p>
+                          </div>
+            
+                         <div class="delet">
+                               <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                         </div>
+                      </div>
+                      <div class="item">
+                          <div class="imgbook"><img src="images/book1.jpg" alt="book image" ></div>
+                          
+                          <div class="content">
+                              <h4>فن اللامبالاة</h4>
+                              <h6>Mark Manson</h6>
+                              <p class="book_price">40 EG</p>
+                          </div>
+            
+                         <div class="delet">
+                               <button class="delet_item"><i class="fa-solid fa-trash"></i></button>
+                         </div>
+                      </div>
+              </div>
+            
+              <div class="buttom_Cart">
+            
+                  <div class="total">
+                      <p>Cart Sub Total</p>
+                      <p class="price_cart_total">0 EG</p>
+                  </div>
+                 
+                  <div class="chekoutbtn">
+                      <a href="Checkout.html" class="btn_cart">Proceed To Checkout</a>   
+                  </div>         
+            
+              </div>
+            
+            </div>
+            
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Bookstore</h2>
+            <div class="search-bar-background"></div>
+            <form>
+                <input type="text" placeholder="Search for books..." id="searchBar">
+               <button type="button" onclick="searchFunction(event)">Search</button>
+
+            </form>
+        </section>
+
+        <section class="featured-books">
+            <h2>Featured Books</h2>
+            <div class="book-container">
+                <div class="container">
+                    <img src="images/1984.jpg" alt="Book 1" height="130px">
+                    <h3>1984</h3>
+                    <p>George Orwell</p>
+                    <br>
+                    <a href="BookDetails/1948.html"><button class="button-details">View Details</button></a>
+                </div>
+                <div class="container">
+                    <img src="images/THG.jpg" alt="Book 1">
+                    <h3>The Hunger Games</h3>
+                    <p>Suzzanne Collins</p>
+                    <br>
+                    <a href="BookDetails/The Hunger Games.html"><button class="button-details" onclick="window.location.href ='Page name.html'">View Details</button></a>
+                </div>
+                <div class="container">
+                    <img src="images/Chamber_of_Secrets_New_UK_Cover.webp" alt="Book 3">
+                    <h3>Harry Potter and Chamber of Secrets</h3>
+                    <p>J.K.Rowling</p>
+                    <a href="BookDetails/ChamberOfSecrets.html"><button class="button-details" onclick="window.location.href ='Page name.html'">View Details</button></a>
+                </div>
+                <div class="container">
+                    <img src="images/down.jpg" alt="Book 4">
+                    <h3>Harry Potter and Deathly Hallows</h3>
+                    <p>J.K.Rowling</p>
+                    <a href="BookDetails/DeathlyHallows.html"><button class="button-details" onclick="window.location.href ='Page name.html'">View Details</button></a>
+                </div>
+                <div class="container">
+                    <img src="images/image2.jpeg" alt="Book 5">
+                    <h3>Harry Potter and Philospher's Stone</h3>
+                    <p>J.K.Rowling</p>
+                    <a href="BookDetails/PhilosophersStone.html"><button class="button-details" onclick="window.location.href ='Page name.html'">View Details</button></a>
+                </div>
+                <div class="container">
+                    <img src="images/HBP.jpg" alt="Book 6">
+                    <h3>Harry Potter and the Half-Blood Prince</h3>
+                    <p>J.K.Rowling</p>
+                    <a href="BookDetails/HalfBloodPrince.html"><button class="button-details" onclick="window.location.href ='Page name.html'">View Details</button></a>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+<br>
+<br>   
+<footer class="footer" style="height: 150px;">
+    <div class="column">
+       <h3>Menu</h3>
+       <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+       </ul>
+    </div>
+    <div class="column">
+       <h3>Contacts</h3>
+       <ul>
+          <li> Email: <a href="#">BookStore@gmail.com</a></li>
+       </ul>
+       <ul>
+          <li> Phone: <a href="#">+123 456 789</a></li>
+       </ul>
+    </div>
+    <div class="column">
+       <h3>Socials</h3>
+       <div class="social-icons">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank" style="margin-right: 15px;">
+          <i class="fab fa-facebook" style="font-size: 24px; color: #4267B2;"></i>
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank" style="margin-right: 15px;">
+          <i class="fab fa-instagram" style="font-size: 24px; color: #C13584;"></i>
+          </a>
+          <a href="https://twitter.com" aria-label="Twitter" target="_blank" style="margin-right: 15px;">
+          <i class="fab fa-twitter" style="font-size: 24px; color: #1DA1F2;"></i>
+          </a>
+          <a href="https://tiktok.com" aria-label="TikTok" target="_blank" style="margin-right: 15px;">
+          <i class="fab fa-tiktok" style="font-size: 24px; color: #F8FAFC;"></i>
+          </a>
+       </div>
+    </div>
+    <div class="column">
+      <div class="column">
+          <ul><li><a href="#">Top Page ↑</a></li></ul>
+  </div>      </div>
+ </footer>
+
+
+<script src="script.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
