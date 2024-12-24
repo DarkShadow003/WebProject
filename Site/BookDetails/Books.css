@@ -82,6 +82,7 @@
    visibility: hidden; /* Hide the element completely */
    z-index: 1000;
    box-sizing: border-box;
+   text-align: center;
 }
 
 .cart.act {
