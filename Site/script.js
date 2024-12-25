@@ -15,3 +15,13 @@ function searchFunction(event) {
         }
     });
 }
+function displayDate() {
+    var currentDate = new Date();
+    var dateString = currentDate.toLocaleDateString(); // Format the date
+    document.getElementById("dateDisplay").innerHTML = dateString; // Update the HTML
+}
+
+// Call the function when the page loads
+window.onload = function() {
+    displayDate(); // Display the date when the page loads
+};

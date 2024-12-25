@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="onlyCart.css">
     <link rel="stylesheet" href="home.css">
     
+    <script>
+        function displayDate() {
+            var currentDate = new Date();
+            var dateString = currentDate.toLocaleDateString();
+            document.getElementById("dateDisplay").innerHTML = dateString;
+        }
+    </script>
+
 </head>
 <body style="padding-bottom:50 ;">
     <nav class="navbar">
@@ -18,9 +26,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#" onclick="open_cart()">Cart</a></li>
           <li><a href="About.html">About Us</a></li>
+          <li id="dateDisplay" class="date-display"></li>
       
         </ul>
       </nav>
+      
+      
       
       
             <div class="cart">

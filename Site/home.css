@@ -6,7 +6,12 @@ body {
     background-color: #52443A;
     flex-grow: 1;
 }
-
+.date-display {
+  margin-left: 20px; 
+  font-size: 16px;   
+  color: white;        
+  font-weight: bold;
+}
 
 .search-bar-background {
   position: absolute;
