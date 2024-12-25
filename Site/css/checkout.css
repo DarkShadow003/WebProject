@@ -81,6 +81,11 @@ a:visited{
    visibility: hidden; /* Hide the element completely */
    z-index: 1000;
    box-sizing: border-box;
+   text-align: center;
+}
+
+a{
+   text-decoration: null;
 }
 
 .cart.act {
